@@ -41,8 +41,8 @@ const NavBar = () => {
           </div>
           <div className="navbar-menu-container">
         <BsList onClick={() => setOpenMenu(true)} />
-      </div>
-        </nav>
+      </div>       
+    </nav>
       );
     
     };
