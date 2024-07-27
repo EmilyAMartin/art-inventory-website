@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Logo from "../Images/Logo.png";
 import { BsFillHouseDoorFill } from "react-icons/bs";
 import { BsFillBagFill } from "react-icons/bs";
 import { BsFillPersonFill } from "react-icons/bs";
@@ -30,7 +31,7 @@ const NavBar = () => {
     return (
         <nav>
         <div className="nav-logo">
-        <img src="logo.png" alt="paint brush" width="2288" height="2288"/>
+        <img src={Logo} alt="paint brushes and paint" width="4%" height="4%" />
         </div>
           <div className="navbar-links-container">
             <a href="">Home</a>
