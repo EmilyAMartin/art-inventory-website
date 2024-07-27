@@ -320,9 +320,6 @@ nav {
   }
 }
 @media (max-width: 800px) {
-  .nav-logo-container {
-    max-width: 140px;
-  }
   .navbar-links-container {
     display: none;
   }

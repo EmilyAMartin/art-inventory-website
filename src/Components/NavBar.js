@@ -3,9 +3,11 @@ import { BsFillHouseDoorFill } from "react-icons/bs";
 import { BsFillBagFill } from "react-icons/bs";
 import { BsFillPersonFill } from "react-icons/bs";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
+import { BsList } from "react-icons/bs";
 
 
 const NavBar = () => {
+  const [openMenu, setOpenMenu] = useState(false);
     const menuOptions = [
       {
         text: "Home",
@@ -27,8 +29,8 @@ const NavBar = () => {
   
     return (
         <nav>
-        <div className="nav-logo-container">
-        <img src="./Images/logo.png" alt="paint brush" width="500" height="600"/>
+        <div className="nav-logo">
+        <img src="logo.png" alt="paint brush" width="2288" height="2288"/>
         </div>
           <div className="navbar-links-container">
             <a href="">Home</a>
@@ -37,8 +39,12 @@ const NavBar = () => {
             <a href="">Contact</a>
             <button className="primary-button">Sign Up</button>
           </div>
+          <div className="navbar-menu-container">
+        <BsList onClick={() => setOpenMenu(true)} />
+      </div>
         </nav>
       );
+    
     };
     
  export default NavBar;
