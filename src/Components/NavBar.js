@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../Images/Logo.png";
+import Logo from "../Images/Logo2.png";
 import { BsFillHouseDoorFill } from "react-icons/bs";
 import { BsFillBagFill } from "react-icons/bs";
 import { BsFillPersonFill } from "react-icons/bs";
@@ -31,14 +31,14 @@ const NavBar = () => {
     return (
         <nav>
         <div className="nav-logo">
-        <img src={Logo} alt="paint brushes and paint" width="4%" height="4%" />
+        <img src={Logo} alt="paint brushes and paint" width="15%" height="15%" />
         </div>
           <div className="navbar-links-container">
             <a href="">Home</a>
             <a href="">Artwork</a>
             <a href="">Account</a>
             <a href="">Contact</a>
-            <button className="primary-button">Sign Up</button>
+            <button className="primary-button">Log In</button>
           </div>
           <div className="navbar-menu-container">
         <BsList onClick={() => setOpenMenu(true)} />
