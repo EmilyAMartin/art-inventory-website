@@ -38,7 +38,7 @@ const NavBar = () => {
             <a href="">Artwork</a>
             <a href="">Account</a>
             <a href="">Contact</a>
-            <button className="primary-button">Log In</button>
+          <a href="" className="primary-button">Log In</a>
           </div>
           <div className="navbar-menu-container">
         <BsList onClick={() => setOpenMenu(true)} />
