@@ -38,8 +38,9 @@ const NavBar = () => {
             <a href="">Artwork</a>
             <a href="">Account</a>
             <a href="">Contact</a>
-          <a href="" className="primary-button">Log In</a>
+            <a href="" className="primary-button">Login</a>
           </div>
+          
           <div className="navbar-menu-container">
         <BsList onClick={() => setOpenMenu(true)} />
       </div>       
