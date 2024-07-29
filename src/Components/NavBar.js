@@ -38,7 +38,7 @@ const NavBar = () => {
             <a href="">Artwork</a>
             <a href="">Account</a>
             <a href="">Contact</a>
-            <a href="" className="primary-button">Login</a>
+            <button href="" className="primary-button">Login</button>
           </div>
           
           <div className="navbar-menu-container">

@@ -25,7 +25,7 @@ nav {
   justify-content: space-between;
   min-height: 100px;
 }
-.navbar-links-container a {
+a {
   text-decoration: none;
 }
 .navbar-links-container {
@@ -81,6 +81,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  gap: 1rem;
 }
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
