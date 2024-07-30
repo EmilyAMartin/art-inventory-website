@@ -28,6 +28,9 @@ nav {
 a {
   text-decoration: none;
 }
+a:hover {
+  color: #6c63ff;
+}
 .navbar-links-container {
   margin: 1rem;
   display: flex;

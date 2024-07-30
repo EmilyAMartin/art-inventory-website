@@ -5,6 +5,7 @@ import { BsFillBagFill } from "react-icons/bs";
 import { BsFillPersonFill } from "react-icons/bs";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 import { BsList } from "react-icons/bs";
+import { BsXLg } from "react-icons/bs";
 
 
 const NavBar = () => {
@@ -43,7 +44,15 @@ const NavBar = () => {
           
           <div className="navbar-menu-container">
         <BsList onClick={() => setOpenMenu(true)} />
-      </div>       
+        <div className="navbar-links-container">
+            <a href="">Home</a>
+            <a href="">Artwork</a>
+            <a href="">Account</a>
+            <a href="">Contact</a>
+            <button href="" className="primary-button">Login</button>
+          </div>
+      </div>  
+       
     </nav>
       );
     
