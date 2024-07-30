@@ -44,6 +44,7 @@ a:hover {
 .navbar-menu-container {
   display: none;
 }
+
 .primary-button {
   padding: 0.5rem 1.5rem;
   background-color: #6c63ff;
@@ -86,16 +87,16 @@ a:hover {
   align-items: flex-start;
   gap: 1rem;
 }
-.primary-heading {
+.home-heading {
   font-size: clamp(2rem, 5vw, 4rem);
-  color: #4c4c4c;
-  /* line-height: 5rem; */
+  font-weight: 600;
+  color: #000000;
   max-width: 600px;
 }
-.primary-text {
+.home-primary-text {
   font-size: clamp(1rem, 3vw, 1.5rem);
   max-width: 500px;
-  color: #6a6a6a;
+  color: #000000;
   margin: 1.5rem 0rem;
 }
 .secondary-button {
@@ -121,6 +122,20 @@ a:hover {
   background-color: #4640ad;
 }
 
+.registration-form-container {
+  border: black solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.registration-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.registration-primary-text {
+}
+
 @media (max-width: 1000px) {
   .navbar-links-container a {
     margin-right: 1rem;
@@ -135,7 +150,7 @@ a:hover {
 }
 @media (max-width: 800px) {
   .nav-logo-container {
-    max-width: 300px;
+    max-width: 400px;
   }
   .navbar-links-container {
     display: none;
@@ -155,11 +170,11 @@ a:hover {
     width: 100%;
     max-width: 400px;
   }
-  .primary-heading {
+  .home-heading {
     text-align: center;
     max-width: 90%;
   }
-  .primary-text {
+  .home-primary-text {
     text-align: center;
     max-width: 80%;
   }

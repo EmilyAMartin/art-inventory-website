@@ -9,13 +9,13 @@ const Home = () => {
       <div className="home-banner-container">
         <div className="home-bannerImage-container"></div>
         <div className="home-text-section">
-          <h1 className="primary-heading">Lorem ipsum</h1>
-          <p className="primary-text">
+          <div className="home-heading">Lorem ipsum</div>
+          <div className="home-primary-text">
             Lorem ipsum dolor sit amet consectetur. Ullamcorper elementum
             aliquam fermentum orci. Tristique quis a sit eget. Quis donec risus
             varius aenean pharetra cursus tellus magna ut.Quam ornare quis in
             sit faucibus ut dolor.
-          </p>
+          </div>
           <button className="secondary-button">Sign Up </button>
         </div>
         <div className="home-image-section">

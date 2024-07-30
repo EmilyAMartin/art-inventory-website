@@ -5,7 +5,6 @@ import { BsFillBagFill } from "react-icons/bs";
 import { BsFillPersonFill } from "react-icons/bs";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 import { BsList } from "react-icons/bs";
-import { BsXLg } from "react-icons/bs";
 
 
 const NavBar = () => {
@@ -31,8 +30,8 @@ const NavBar = () => {
   
     return (
         <nav>
-        <div className="nav-logo">
-        <img src={Logo} alt="paint brushes and paint" width="15%" height="15%" />
+        <div className="nav-logo-container">
+        <img src={Logo} alt="paint brushes and paint" width="15%" height="15%"/>
         </div>
           <div className="navbar-links-container">
             <a href="">Home</a>
@@ -44,15 +43,7 @@ const NavBar = () => {
           
           <div className="navbar-menu-container">
         <BsList onClick={() => setOpenMenu(true)} />
-        <div className="navbar-links-container">
-            <a href="">Home</a>
-            <a href="">Artwork</a>
-            <a href="">Account</a>
-            <a href="">Contact</a>
-            <button href="" className="primary-button">Login</button>
-          </div>
-      </div>  
-       
+      </div>    
     </nav>
       );
     
