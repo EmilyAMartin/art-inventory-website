@@ -4,7 +4,7 @@ const Registration = () => {
   return (
    
     
-      <div className='registration-form-container'>
+      <div id='registration-modal' className='registration-form-container'>
         <div className='registration-header'>Sign Up</div>
         <div className='registration-primary-text'> Please fill in this form to create an account.</div>
         
@@ -18,13 +18,13 @@ const Registration = () => {
         <input aria-label='repeat-password' type='text' placeholder='Repeat Password' name='repeat-password' required/>
       
         <label>
-          <input aria-label='remember-me-checkbox' type='checkbox' checked='checked' name='remember'/>
+          <input aria-label='remember-me-checkbox' type='checkbox' checked='checked' name='remember' style={{marginRight: '0.5rem'}}/>
           Remember me
         </label>
         
         <div className='registration-buttons'>
-          <button type='button' className='cancel-button'>Cancel</button>
           <button type='submit-button' className='submit-button'>Sign Up</button>
+          <button type='button' className='cancel-button'>Cancel</button> 
         </div>
       </div>
      

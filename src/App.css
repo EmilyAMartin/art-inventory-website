@@ -123,21 +123,47 @@ a:hover {
 }
 
 .registration-form-container {
-  border: black solid 1px;
   padding: 2rem 2rem;
   gap: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 .registration-header {
   font-size: 1.5rem;
   font-weight: 600;
 }
-.registration-primary-text {
+.cancel-button {
+  margin-left: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #ff6363;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
 }
-
+.cancel-button:hover {
+  background-color: #b84949;
+}
+.submit-button {
+  padding: 0.5rem 1.5rem;
+  background-color: #6c63ff;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+.submit-button:hover {
+  background-color: #4640ad;
+}
 @media (max-width: 1000px) {
   .navbar-links-container a {
     margin-right: 1rem;
