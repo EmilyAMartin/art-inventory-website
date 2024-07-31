@@ -4,7 +4,7 @@ const Registration = () => {
   return (
    
     
-      <div id='registration-modal' className='registration-form-container'>
+      <div className='registration-form-container'>
         <div className='registration-header'>Sign Up</div>
         <div className='registration-primary-text'> Please fill in this form to create an account.</div>
         
@@ -27,9 +27,6 @@ const Registration = () => {
           <button type='button' className='cancel-button'>Cancel</button> 
         </div>
       </div>
-     
-    
-
   )
 }
 
