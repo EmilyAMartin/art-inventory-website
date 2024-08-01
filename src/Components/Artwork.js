@@ -1,18 +1,19 @@
 import React from 'react'
+import { BsImage } from "react-icons/bs";
 
 const Artwork = () => {
   return (
    
     <div className='artwork-container'>
       
-      <div className='artwork-image'>
-      <div className='box'>Box</div>
-      <div className='upload-photo-icon'></div>
+      <div className='artwork-image-placeholder'>
+        <div className='artwork-header'>Artwork</div>
+        <div className='box'>
+          <div className='image-icon'><BsImage /></div>
+        </div>
       </div>
 
       <div className='artwork-form-container'>
-        <div className='artwork-header'>Artwork</div>
-        
         <label for='title'><b>Title</b></label>
         <input aria-label='title' type='text' placeholder='Title' name='title' required/>
 

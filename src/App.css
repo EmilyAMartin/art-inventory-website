@@ -173,7 +173,6 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border: #000000 solid 1px;
 }
 .box {
   width: 15rem;
