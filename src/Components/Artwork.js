@@ -3,7 +3,13 @@ import React from 'react'
 const Artwork = () => {
   return (
    
-    
+    <div className='artwork-container'>
+      
+      <div className='artwork-image'>
+      <div className='box'>Box</div>
+      <div className='upload-photo-icon'></div>
+      </div>
+
       <div className='artwork-form-container'>
         <div className='artwork-header'>Artwork</div>
         
@@ -12,18 +18,37 @@ const Artwork = () => {
 
         <label for='year'><b>Year</b></label>
         <input aria-label='year' type='text' placeholder='Year' name='year' required/>
+        
+        <label for='location'><b>Location</b></label>
+        <input aria-label='location' type='text' placeholder='Location' name='location' required/>
 
         <label for='medium'><b>Medium</b></label>
-        <input aria-label='medium' type='text' placeholder='Medium' name='medium' required/>
-        
-        <label for='Location'><b>Location</b></label>
-        <input aria-label='location' type='text' placeholder='Location' name='location' required/>
-        
-        <div className='login-buttons'>
+        <select class="dropdown-menu" id="dropdown" autocomplete="off">
+        <option value=""selected></option>
+        <option value="painting">Painting</option>
+        <option value="sculpture">Sculpture</option>
+        <option value="printmaking">Printmaking</option>
+        <option value="textile">Textile</option>
+        <option value="photography">Photography</option>
+        <option value="digital">Digital Art</option>
+        <option value="other">Other</option>
+        </select>
+
+        <label for='quantity'><b>Quantity</b></label>
+        <input aria-label='number' type='number' placeholder='' name='quantity' min="1" max="" required/>
+
+        <label for='availability'><b>Availability</b></label>
+        <select class="dropdown-menu" id="dropdown" autocomplete="off">
+        <option value=""selected></option>
+        <option value="available">Available</option>
+        <option value="sold">Sold</option>
+        </select>
+       
+        <div className='artwork-buttons'>
           <button type='submit-button' className='submit-button'>Submit</button>
           <button type='button' className='cancel-button'>Cancel</button> 
         </div>
-        
+      </div>
       </div>
   )
 }
