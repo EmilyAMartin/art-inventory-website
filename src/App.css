@@ -168,6 +168,10 @@ a:hover {
 .submit-button:hover {
   background-color: #4640ad;
 }
+.close-button {
+  text-align: right;
+  font-size: 1.5rem;
+}
 .artwork-container {
   display: flex;
   flex-direction: row;

@@ -1,10 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Registration = () => {
   return (
-   
-    
       <div className='registration-form-container'>
+         <div className='close-button'>&times;</div>
         <div className='registration-header'>Sign Up</div>
         <div className='registration-primary-text'> Please fill in this form to create an account.</div>
         
@@ -24,7 +23,8 @@ const Registration = () => {
         
         <div className='registration-buttons'>
           <button type='submit-button' className='submit-button'>Sign Up</button>
-          <button type='button' className='cancel-button'>Cancel</button> 
+          <button type='button' className='cancel-button'>Cancel</button>
+          
         </div>
       </div>
   )

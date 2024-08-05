@@ -3,9 +3,8 @@ import { BsImage } from "react-icons/bs";
 
 const Artwork = () => {
   return (
-   
+  
     <div className='artwork-container'>
-      
       <div className='artwork-image-placeholder'>
         <div className='artwork-header'>Artwork</div>
         <div className='box'>

@@ -5,6 +5,7 @@ const Login = () => {
    
     
       <div className='login-form-container'>
+           <div className='close-button'>&times;</div>
         <div className='login-header'>Login</div>
         
         <label for='email'><b>Email</b></label>
