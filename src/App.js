@@ -4,8 +4,6 @@ import { createPortal } from "react-dom";
 import "./App.css";
 import HeroImg from "./heroimg.png";
 import Modal from "./Components/Modal";
-import Login from "./Components/Login";
-import Artwork from "./Components/Artwork";
 import NavBar from "./Components/NavBar";
 
 function App() {

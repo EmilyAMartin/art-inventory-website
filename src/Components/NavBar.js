@@ -5,8 +5,10 @@ import { BsFillBagFill } from "react-icons/bs";
 import { BsFillPersonFill } from "react-icons/bs";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 import { BsList } from "react-icons/bs";
+import Modal from "./Modal";
 
 const NavBar = () => {
+  const [modalOpen, setModalOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
     {
@@ -42,11 +44,15 @@ const NavBar = () => {
         <a href="">Artwork</a>
         <a href="">Account</a>
         <a href="">Contact</a>
-        <button className="primary-button">Login</button>
+        <button className="primary-button" onClick={() => setModalOpen(true)}>
+          Login
+        </button>
       </div>
-
       <div className="navbar-menu-container">
         <BsList onClick={() => setOpenMenu(true)} />
+      </div>
+      <div className="login-modal">
+        <Modal />
       </div>
     </nav>
   );
