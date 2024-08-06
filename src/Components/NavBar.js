@@ -26,11 +26,6 @@ const NavBar = () => {
       icon: <BsFillQuestionCircleFill />,
     },
   ];
-  const [modalOpen, setModalOpen] = useState(false);
-
-  const handleButtonClick = (value) => {
-    setModalOpen(false);
-  };
 
   return (
     <nav>
@@ -47,9 +42,7 @@ const NavBar = () => {
         <a href="">Artwork</a>
         <a href="">Account</a>
         <a href="">Contact</a>
-        <button className="primary-button" onClick={() => setModalOpen(true)}>
-          Login
-        </button>
+        <button className="primary-button">Login</button>
       </div>
 
       <div className="navbar-menu-container">
