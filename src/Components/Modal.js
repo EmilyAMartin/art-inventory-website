@@ -1,65 +1,36 @@
-import React, { useState } from "react";
+import React from "react";
+import "./Modal.css";
 
-const Modal = () => {
+const Modal = ({ onSubmit, onCancel, closeModal, children }) => {
   return (
-    <div className="modal-container">
+    <div
+      className="modal-container"
+      onClick={(e) => {
+        if (e.target.className === "modal-container")
+          closeModal("Modal was closed");
+      }}
+    >
       <div className="modal">
-        <div className="modal-header">
-          <p className="close-button">&times;</p>
+        <div
+          className="modal-header"
+          onClick={() => closeModal("Modal was closed")}
+        >
+          <p className="close">&times;</p>
         </div>
-        <div className="modal-context">
-          <h1>Sign Up</h1>
-          <p>Please fill in this form to create an account.</p>
-          <label for="email">
-            <b>Email</b>
-          </label>
-          <input
-            aria-label="email"
-            type="text"
-            placeholder="Enter Email"
-            name="email"
-            required
-          />
-
-          <label for="password">
-            <b>Password</b>
-          </label>
-          <input
-            aria-label="password"
-            type="text"
-            placeholder="Enter Password"
-            name="password"
-            required
-          />
-
-          <label for="repeat-password">
-            <b>Repeat Password</b>
-          </label>
-          <input
-            aria-label="repeat-password"
-            type="text"
-            placeholder="Repeat Password"
-            name="repeat-password"
-            required
-          />
-
-          <label>
-            <input
-              aria-label="remember-me-checkbox"
-              type="checkbox"
-              checked="checked"
-              name="remember"
-              style={{ marginRight: "0.5rem" }}
-            />
-            Remember me
-          </label>
-        </div>
-
-        <div className="modal-buttons">
-          <button type="submit-button" className="submit-button">
-            Sign Up
+        <div className="modal-content">{children}</div>
+        <div className="modal-footer">
+          <button
+            type="submit"
+            className="submit-button"
+            onClick={() => onSubmit("Submit button was clicked")}
+          >
+            Submit
           </button>
-          <button type="button" className="cancel-button">
+          <button
+            type="submit"
+            className="cancel-button"
+            onClick={() => onCancel("Cancel button was clicked")}
+          >
             Cancel
           </button>
         </div>
@@ -67,5 +38,4 @@ const Modal = () => {
     </div>
   );
 };
-
-export default Modal;
+export default Modal
