@@ -46,8 +46,8 @@ const NavBar = () => {
         />
       </div>
       <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">Artwork</a>
+        <a href="/">Home</a>
+        <a href="/Art">Artwork</a>
         <a href="">Account</a>
         <a href="">Contact</a>
         <button className="primary-button" onClick={() => setModalOpen(true)}>
