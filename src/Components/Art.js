@@ -1,3 +1,10 @@
+import { BsPlusCircle } from "react-icons/bs";
+
 export default function Art() {
-  return <h1>Art</h1>;
+  return (
+    <div className="art-container">
+      <div>Add New Artwork</div>
+      <div><BsPlusCircle /></div>
+    </div>
+  );
 }

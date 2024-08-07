@@ -211,4 +211,12 @@ a:hover {
   }
 }
 
-
+.art-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+  margin: 2rem;
+  font-size: 1.2rem;
+}

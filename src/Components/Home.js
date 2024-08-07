@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { createPortal } from "react-dom";
-import HeroImg from "./heroimg.png";
+import HomeImg from "./homeimg.png";
 import Modal from "./Modal";
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
             </button>
           </div>
           <div className="home-image-section">
-            <img src={HeroImg} alt="illustration of woman painting a canvas" />
+            <img src={HomeImg} alt="illustration of woman painting a canvas" />
           </div>
         </div>
       </div>
