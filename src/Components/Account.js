@@ -7,14 +7,47 @@ export default function Account() {
         <div className="profile-picture">
           <BsPersonCircle />
         </div>
-        <div className="account-header">Jane Doe</div>
-        <div className="account-text">fake@fake.com</div>
+        <div className="profile-header">Jane Doe</div>
+        <div className="profile-subheader">fake@fake.com</div>
+        <label for="first name">
+          <b>First Name</b>
+        </label>
+        <input
+          aria-label="first name"
+          type="text"
+          placeholder="First Name"
+          name="first name"
+          required
+        />
+
+        <label for="last name">
+          <b>Last Name</b>
+        </label>
+        <input
+          aria-label="last name"
+          type="text"
+          placeholder="Last Name"
+          name="last name"
+          required
+        />
+
+        <label for="repeat-password">
+          <b>Repeat Password</b>
+        </label>
+        <input
+          aria-label="repeat-password"
+          type="text"
+          placeholder="Repeat Password"
+          name="repeat-password"
+          required
+        />
+        <button className="update-button">Update</button>
       </div>
 
       <div className="security-container">
         <div className="security-header">Sign-in & Security</div>
         <div className="security-text">
-          {"Update your username or password used to sign in "}
+          {"Update your email or password used to sign in "}
         </div>
         <label for="email">
           <b>Email</b>
@@ -59,7 +92,7 @@ export default function Account() {
           />
           2-Step Verification
         </label>
-        <button>Update</button>
+        <button className="update-button">Update</button>
       </div>
     </div>
   );
