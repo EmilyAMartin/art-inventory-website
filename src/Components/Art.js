@@ -17,7 +17,7 @@ export default function Art() {
         <BsPlusCircle />
       </div>
 
-      <div className="login-modal">
+      <div className="art-modal">
         {modalOpen &&
           createPortal(
             <Modal

@@ -227,8 +227,31 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: left;
-  gap: 1rem;
-  margin: 2rem;
-  font-size: 1.2rem;
+  justify-content: center;
+  gap: 20rem;
+  margin: 6rem;
+  padding: 2rem;
+  border: #83838350 solid 2px;
+  border-radius: 1rem;
+}
+.account-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.profile-picture {
+  font-size: 8rem;
+}
+.security-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 4rem;
+  border: #83838350 solid 2px;
+  border-radius: 1rem;
+}
+.security-header {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
