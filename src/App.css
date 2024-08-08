@@ -24,6 +24,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   min-height: 100px;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 a {
   text-decoration: none;
@@ -212,6 +214,16 @@ a:hover {
 }
 
 .art-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+  margin: 2rem;
+  font-size: 1.2rem;
+}
+
+.account-container {
   display: flex;
   flex-direction: row;
   align-items: center;

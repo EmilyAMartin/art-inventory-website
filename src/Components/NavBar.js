@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { createPortal } from "react-dom";
+import Modal from "./Modal";
 
 import Logo from "../Images/Logo2.png";
 import { BsFillHouseDoorFill } from "react-icons/bs";
@@ -7,7 +9,6 @@ import { BsFillBagFill } from "react-icons/bs";
 import { BsFillPersonFill } from "react-icons/bs";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 import { BsList } from "react-icons/bs";
-import Modal from "./Modal";
 
 const NavBar = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -46,10 +47,10 @@ const NavBar = () => {
         />
       </div>
       <div className="navbar-links-container">
-        <a href="/">Home</a>
-        <a href="/Art">Artwork</a>
-        <a href="">Account</a>
-        <a href="">Contact</a>
+        <Link to="/">Home</Link>
+        <Link to="/Art">Artwork</Link>
+        <Link to="/Account">Account</Link>
+        <Link to="">Contact</Link>
         <button className="primary-button" onClick={() => setModalOpen(true)}>
           Login
         </button>
