@@ -30,17 +30,6 @@ export default function Account() {
           name="last name"
           required
         />
-
-        <label for="repeat-password">
-          <b>Repeat Password</b>
-        </label>
-        <input
-          aria-label="repeat-password"
-          type="text"
-          placeholder="Repeat Password"
-          name="repeat-password"
-          required
-        />
         <button className="update-button">Update</button>
       </div>
 

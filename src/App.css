@@ -226,13 +226,12 @@ a:hover {
 .account-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 20rem;
+  gap: 10rem;
   margin: 6rem;
   padding: 2rem;
-  border: #83838350 solid 2px;
-  border-radius: 1rem;
 }
 .profile-header {
   font-size: 1.5rem;

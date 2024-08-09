@@ -4,37 +4,18 @@ import { createPortal } from "react-dom";
 import Modal from "./Modal";
 
 import Logo from "../Images/Logo2.png";
-import { BsFillHouseDoorFill } from "react-icons/bs";
-import { BsFillBagFill } from "react-icons/bs";
-import { BsFillPersonFill } from "react-icons/bs";
-import { BsFillQuestionCircleFill } from "react-icons/bs";
 import { BsList } from "react-icons/bs";
 
 const NavBar = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+  const toggleMenu = () => {
+    setOpenMenu((open) => !open);
+  };
+
   const [modalOpen, setModalOpen] = useState(false);
   const handleButtonClick = (value) => {
     setModalOpen(false);
   };
-
-  const [openMenu, setOpenMenu] = useState(false);
-  const menuOptions = [
-    {
-      text: "Home",
-      icon: <BsFillHouseDoorFill />,
-    },
-    {
-      text: "Artwork",
-      icon: <BsFillBagFill />,
-    },
-    {
-      text: "Account",
-      icon: <BsFillPersonFill />,
-    },
-    {
-      text: "Contact",
-      icon: <BsFillQuestionCircleFill />,
-    },
-  ];
 
   return (
     <nav>
@@ -55,8 +36,8 @@ const NavBar = () => {
           Login
         </button>
       </div>
-      <div className="navbar-menu-container">
-        <BsList onClick={() => setOpenMenu(true)} />
+      <div className="trigger" onClick={toggleMenu}>
+        <BsList />
       </div>
 
       <div className="login-modal">
