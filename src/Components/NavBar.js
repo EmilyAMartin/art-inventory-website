@@ -7,9 +7,9 @@ import Logo from "../Images/Logo2.png";
 import { BsList } from "react-icons/bs";
 
 const NavBar = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+  const { isOpen, setIsOpen } = useState(false);
   const toggleMenu = () => {
-    setOpenMenu((open) => !open);
+    setIsOpen((open) => !open);
   };
 
   const [modalOpen, setModalOpen] = useState(false);
@@ -27,7 +27,7 @@ const NavBar = () => {
           height="15%"
         />
       </div>
-      <div className="navbar-links-container">
+      <div className={`navbar-links-container ${isOpen ? "is-open" : ""}`}>
         <Link to="/">Home</Link>
         <Link to="/Art">Artwork</Link>
         <Link to="/Account">Account</Link>

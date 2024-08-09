@@ -46,6 +46,9 @@ a:hover {
 .navbar-menu-container {
   display: none;
 }
+.trigger {
+  display: none;
+}
 
 .primary-button {
   padding: 0.5rem 1.5rem;
@@ -151,68 +154,6 @@ a:hover {
   border: #afafaf solid 1px;
 }
 
-@media (max-width: 1000px) {
-  .navbar-links-container a {
-    margin-right: 1rem;
-    font-size: 1rem;
-  }
-  .primary-button {
-    font-size: 1rem;
-  }
-  .home-bannerImage-container {
-    max-width: 600px;
-  }
-}
-@media (max-width: 800px) {
-  .nav-logo-container {
-    max-width: 400px;
-  }
-  .navbar-links-container {
-    display: none;
-  }
-  .navbar-menu-container {
-    display: flex;
-  }
-  .home-bannerImage-container {
-    max-width: 450px;
-  }
-  .home-banner-container {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-  }
-  .home-image-section {
-    width: 100%;
-    max-width: 400px;
-  }
-  .home-heading {
-    text-align: center;
-    max-width: 90%;
-  }
-  .home-primary-text {
-    text-align: center;
-    max-width: 80%;
-  }
-  .home-text-section {
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-  }
-  .secondary-button {
-    font-size: 1rem;
-    padding: 0.8rem 2rem;
-    cursor: pointer;
-  }
-  .App {
-    max-width: 95vw;
-  }
-}
-@media (max-width: 600px) {
-  .home-bannerImage-container {
-    display: none;
-  }
-}
-
 .art-container {
   display: flex;
   flex-direction: row;
@@ -283,4 +224,75 @@ a:hover {
 }
 .update-button:hover {
   background-color: #4640ad;
+}
+
+@media (max-width: 1000px) {
+  .navbar-links-container a {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  .primary-button {
+    font-size: 1rem;
+  }
+  .home-bannerImage-container {
+    max-width: 600px;
+  }
+}
+@media (max-width: 800px) {
+  .nav-logo-container {
+    max-width: 400px;
+  }
+  .navbar-menu-container {
+    display: flex;
+  }
+  .home-bannerImage-container {
+    max-width: 450px;
+  }
+  .home-banner-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-image-section {
+    width: 100%;
+    max-width: 400px;
+  }
+  .home-heading {
+    text-align: center;
+    max-width: 90%;
+  }
+  .home-primary-text {
+    text-align: center;
+    max-width: 80%;
+  }
+  .home-text-section {
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .secondary-button {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+  }
+  .App {
+    max-width: 95vw;
+  }
+}
+@media (max-width: 600px) {
+  .home-bannerImage-container {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .trigger {
+    display: block;
+  }
+  .navbar-links-container {
+    display: none;
+  }
+  .navbar-links-container.is-open {
+    display: block;
+  }
 }
