@@ -7,14 +7,13 @@ import Logo from "../Images/Logo2.png";
 import { BsList } from "react-icons/bs";
 
 const NavBar = () => {
-  const { isOpen, setIsOpen } = useState(false);
-  const toggleMenu = () => {
-    setIsOpen((open) => !open);
-  };
-
   const [modalOpen, setModalOpen] = useState(false);
   const handleButtonClick = (value) => {
     setModalOpen(false);
+  };
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen((open) => !open);
   };
 
   return (
