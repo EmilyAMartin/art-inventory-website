@@ -26,14 +26,16 @@ const NavBar = () => {
           height="15%"
         />
       </div>
-      <div className={`navbar-links-container ${isOpen ? "is-open" : ""}`}>
-        <Link to="/">Home</Link>
-        <Link to="/Art">Artwork</Link>
-        <Link to="/Account">Account</Link>
-        <Link to="">Contact</Link>
-        <button className="primary-button" onClick={() => setModalOpen(true)}>
-          Login
-        </button>
+      <div className="navbar-links-container">
+        <div className="navbar-links">
+          <Link to="/">Home</Link>
+          <Link to="/Art">Artwork</Link>
+          <Link to="/Account">Account</Link>
+          <Link to="">Contact</Link>
+          <button className="primary-button" onClick={() => setModalOpen(true)}>
+            Login
+          </button>
+        </div>
       </div>
       <div className="trigger" onClick={toggleMenu}>
         <BsList />
